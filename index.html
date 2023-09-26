@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>O Cheiro do Gosto</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google fonts-->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css" type="text/css" />
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js"></script>
+  <script src="https://npmcdn.com/csv2geojson@5.1.2/csv2geojson.js"></script>
+  <script src="https://npmcdn.com/@turf/turf@6.5.0/turf.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+    
+<body>
+    
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">×</a>
+    <div class="sidebar-content">
+      <h1>CHEIRO DO GOSTO</h1>
+      <br>
+      <p>Nossa missão é celebrar a culinária regional, conectar produtores e consumidores e promover uma alimentação saudável, sustentável e consciente.
+      <br>
+      Belo Horizonte é uma cidade conhecida por sua rica cultura gastronômica, com sabores tradicionais que refletem a história e as influências de sua população. No entanto, muitos desses sabores e ingredientes estão sendo perdidos com o passar do tempo, diante do crescimento da produção em larga escala e da homogeneização dos produtos disponíveis.
+      <br> 
+      O projeto "Cheiro do Gosto" surge como uma resposta a esse cenário, buscando resgatar e preservar a identidade culinária local. Através de uma extensa pesquisa, mapeamos quintais e produtoras em toda a cidade, identificando aqueles que cultivam e produzem alimentos tradicionais, orgânicos e de qualidade.</p>
+      <br> 
+      <hr>
+      <br>
+      <img src="assets/pbh_verde.png" style="width:80%; margin:10%;">     
+    </div>
+  </div>
+
+
+  <!-- <img src="assets/logo.png" class="openbtn" onclick="openNav()"> -->
+
+  <div class="fichario">
+    <div class="fichas">
+      <!-- 
+      <img src="assets/botao_creme.png" class="botao_ficha botao_creme" onclick="creme()">
+      <img src="assets/botao_marrom.png" class="botao_ficha botao_marrom" onclick="ficha('var(--marrom)')" >
+      <img src="assets/botao_mostarda.png" class="botao_ficha botao_mostarda" onclick="ficha('var(--mostarda)')" >
+      <img src="assets/botao_agua.png" class="botao_ficha botao_agua" onclick="ficha('var(--agua)')">
+      <img src="assets/botao_rosa.png" class="botao_ficha botao_rosa" onclick="ficha('var(--rosa)')" >
+      -->
+      <img src="assets/botao_creme.png" class="botao_ficha botao_creme">
+      <img src="assets/botao_marrom.png" class="botao_ficha botao_marrom">
+      <img src="assets/botao_mostarda.png" class="botao_ficha botao_mostarda">
+      <img src="assets/botao_agua.png" class="botao_ficha botao_agua">
+      <img src="assets/botao_rosa.png" class="botao_ficha botao_rosa">
+      <nav id="menu"></nav>
+    </div>
+  </div>
+
+  <a href="https://instagram.com" target="_blank" onclick="ficha('var(--agua)')"><img src="assets/instagram.png" class="social_logo"></a>
+
+
+  <div id="ficha"></div>
+
+  <div id="map"></div> 
+
+
+  <script src="js/script.js"></script>
+  <script src="js/fichas.js"></script>
+ 
+</body>
+
+</html>
