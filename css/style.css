@@ -114,6 +114,8 @@ hr {
 
 .sidebar a {
   text-decoration: none;
+  font-weight: 1000;
+  font-size: 15px !important;
 }
 
 .sidebar .closebtn {
